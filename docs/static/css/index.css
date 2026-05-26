@@ -1,11 +1,25 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  color: #2d3748;
 }
 
+/* Purple Theme Colors */
+:root {
+  --primary-purple: #9333ea;
+  --light-purple: #c084fc;
+  --dark-purple: #6b21a8;
+  --accent-purple: #e9d5ff;
+  --bg-light: #faf5ff;
+}
 
 .footer .icon-link {
     font-size: 25px;
-    color: #000;
+    color: var(--primary-purple);
+    transition: color 0.3s ease;
+}
+
+.footer .icon-link:hover {
+    color: var(--dark-purple);
 }
 
 .link-block a {
@@ -15,8 +29,9 @@ body {
 
 .dnerf {
   font-variant: small-caps;
+  color: var(--primary-purple);
+  font-weight: 600;
 }
-
 
 .teaser .hero-body {
   padding-top: 0;
@@ -27,54 +42,35 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
-
-.publication-title {
+/* Section styling */
+.section-alt {
+  background: linear-gradient(to bottom, #ffffff, var(--bg-light));
 }
 
-.publication-banner {
-  max-height: parent;
-
+.section-title {
+  color: var(--dark-purple);
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.publication-banner video {
-  position: relative;
-  left: auto;
-  top: auto;
-  transform: none;
-  object-fit: fit;
-}
-
-.publication-header .hero-body {
-}
 
 .publication-title {
     font-family: 'Google Sans', sans-serif;
+    font-weight: 700;
+    color: var(--dark-purple);
 }
 
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
-}
-
-.publication-venue {
-    color: #555;
-    width: fit-content;
-    font-weight: bold;
-}
-
-.publication-awards {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
-}
-
-.publication-authors {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+   color: var(--primary-purple) !important;
+   transition: color 0.3s ease;
 }
 
 .publication-authors a:hover {
+    color: var(--dark-purple);
     text-decoration: underline;
 }
 
@@ -82,76 +78,72 @@ body {
   display: inline-block;
 }
 
-.publication-banner img {
+/* Button styling */
+.button.is-dark {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+  transition: all 0.3s ease;
 }
 
-.publication-authors {
-  /*color: #4286f4;*/
+.button.is-dark:hover {
+  background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
 }
 
+/* Video styling */
 .publication-video {
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-
     overflow: hidden;
-    border-radius: 10px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 24px rgba(107, 33, 168, 0.15);
 }
 
-.publication-video iframe {
+.publication-video iframe,
+.publication-video video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 12px;
 }
 
-.publication-body img {
+/* Image styling */
+.teaser-image,
+figure img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(107, 33, 168, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.results-carousel {
-  overflow: hidden;
+.teaser-image:hover,
+figure img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(107, 33, 168, 0.2);
 }
 
-.results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  padding: 0;
-  font-size: 0;
+/* Navbar styling */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(107, 33, 168, 0.08);
 }
 
-.results-carousel video {
-  margin: 0;
+.navbar-item:hover {
+  color: var(--primary-purple) !important;
 }
 
-
-.interpolation-panel {
-  background: #f5f5f5;
-  border-radius: 10px;
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, var(--bg-light) 100%);
 }
 
-.interpolation-panel .interpolation-image {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.interpolation-video-column {
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
-}
-
-#interpolation-image-wrapper {
-  width: 100%;
-}
-#interpolation-image-wrapper img {
-  border-radius: 5px;
+/* Footer */
+.footer {
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--accent-purple);
 }
