@@ -47,23 +47,6 @@ body {
   background: linear-gradient(to bottom, #ffffff, var(--bg-light));
 }
 
-.section {
-  position: relative;
-}
-
-.section::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(to right, transparent, #d1d5db 20%, #d1d5db 80%, transparent);
-  margin-top: 3rem;
-}
-
-.section:last-of-type::after {
-  display: none;
-}
-
 .section-title {
   color: var(--dark-purple);
   font-weight: 700;
