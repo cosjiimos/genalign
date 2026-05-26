@@ -3,12 +3,12 @@ body {
   color: #2d3748;
 }
 
-/* Purple Theme Colors - Darker */
+/* Purple Theme Colors - Even Darker */
 :root {
-  --primary-purple: #8b5cf6;
-  --light-purple: #a78bfa;
-  --dark-purple: #7c3aed;
-  --accent-purple: #ddd6fe;
+  --primary-purple: #7c3aed;
+  --light-purple: #8b5cf6;
+  --dark-purple: #6d28d9;
+  --accent-purple: #c4b5fd;
   --bg-light: #f5f3ff;
 }
 
@@ -117,6 +117,12 @@ body {
 .teaser-image,
 figure img {
   border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.teaser-image:hover,
+figure img:hover {
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.2);
 }
 
 /* Navbar styling */
