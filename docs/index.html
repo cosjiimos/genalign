@@ -27,9 +27,18 @@
     /* Additional styling for rich content */
     .overview-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       margin: 3rem 0;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 768px) {
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .overview-card {
@@ -43,7 +52,7 @@
 
     .overview-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 12px 32px rgba(147, 51, 234, 0.2);
+      box-shadow: 0 12px 32px rgba(167, 139, 250, 0.2);
       border-color: var(--primary-purple);
     }
 
@@ -66,7 +75,7 @@
     }
 
     .pipeline-step {
-      background: linear-gradient(135deg, #faf5ff 0%, white 100%);
+      background: white;
       padding: 2rem;
       border-radius: 12px;
       border-left: 4px solid var(--primary-purple);

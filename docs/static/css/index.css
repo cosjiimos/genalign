@@ -3,13 +3,13 @@ body {
   color: #2d3748;
 }
 
-/* Purple Theme Colors */
+/* Purple Theme Colors - Toned Down */
 :root {
-  --primary-purple: #9333ea;
-  --light-purple: #c084fc;
-  --dark-purple: #6b21a8;
-  --accent-purple: #e9d5ff;
-  --bg-light: #faf5ff;
+  --primary-purple: #a78bfa;
+  --light-purple: #c4b5fd;
+  --dark-purple: #8b5cf6;
+  --accent-purple: #ede9fe;
+  --bg-light: #f5f3ff;
 }
 
 .footer .icon-link {
@@ -44,7 +44,7 @@ body {
 
 /* Section styling */
 .section-alt {
-  background: linear-gradient(to bottom, #ffffff, var(--bg-light));
+  background: #ffffff;
 }
 
 .section-title {
@@ -139,7 +139,7 @@ figure img:hover {
 
 /* Hero section */
 .hero {
-  background: linear-gradient(135deg, #ffffff 0%, var(--bg-light) 100%);
+  background: #ffffff;
 }
 
 /* Footer */
