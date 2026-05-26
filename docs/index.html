@@ -198,7 +198,7 @@
           <h2 class="title is-3 section-title">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              GenAlign addresses the challenge of <span class="feature-highlight">semantic ambiguity</span> in design generation by extracting structured Visual Knowledge Graphs from product images. The system enables precise property-based editing and generation through fine-grained semantic understanding of design elements, supporting applications in e-commerce, design automation, and creative workflows.
+              GenAlign addresses the challenge of semantic ambiguity in design generation by extracting structured Visual Knowledge Graphs from product images. The system enables precise property-based editing and generation through fine-grained semantic understanding of design elements, supporting applications in e-commerce, design automation, and creative workflows.
             </p>
           </div>
         </div>
@@ -207,6 +207,65 @@
   </section>
 
   <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 section-title has-text-centered">Key Features</h2>
+      <p class="has-text-centered" style="font-size: 1.1rem; color: #4a5568; margin-bottom: 2rem;">
+        Six core capabilities powering the GenAlign system
+      </p>
+
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="overview-card-icon"><i class="fas fa-cut"></i></div>
+          <h3>Semantic Segmentation</h3>
+          <p>
+            Automatic part-level segmentation using Semantic-SAM with Swin-L Transformer backbone for precise boundary detection.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon"><i class="fas fa-brain"></i></div>
+          <h3>GPT-4o Vision</h3>
+          <p>
+            AI-powered segment labeling and attribute extraction (color, material, style, relationships) using multimodal GPT-4o.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon"><i class="fas fa-project-diagram"></i></div>
+          <h3>Knowledge Graph</h3>
+          <p>
+            Structured triple extraction with VisualSem ontology: 13 standard relations + 1 custom "is-style-of" relation.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon"><i class="fas fa-eraser"></i></div>
+          <h3>Background Removal</h3>
+          <p>
+            Intelligent background removal using rembg (ISNet model) for cleaner segmentation results.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon"><i class="fas fa-search"></i></div>
+          <h3>Semantic Search</h3>
+          <p>
+            CLIP-based image embedding with FAISS indexing for fast similarity search and retrieval.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-icon"><i class="fas fa-server"></i></div>
+          <h3>REST API</h3>
+          <p>
+            Production-ready Flask API with 6 endpoints for segmentation, labeling, triple extraction, and image generation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
     <div class="container is-max-desktop">
       <h2 class="title is-3 section-title has-text-centered">Overview</h2>
       <p class="has-text-centered" style="font-size: 1.1rem; color: #4a5568; margin-bottom: 2rem;">
@@ -255,11 +314,6 @@
       <figure class="image" style="margin: 2rem 0;">
         <img src="./img/fig_2.png" alt="System Overview">
       </figure>
-      <div class="content has-text-centered">
-        <p style="font-size: 1.05rem; color: #4a5568;">
-          The system processes images through segmentation (a), extracts properties (b, c), builds a cognitive graph (d), and enables property-based generation (e).
-        </p>
-      </div>
     </div>
   </section>
 
@@ -269,11 +323,6 @@
       <figure class="image" style="margin: 2rem 0;">
         <img src="./img/fig_5.png" alt="Interactive Knowledge Graph">
       </figure>
-      <div class="content">
-        <p style="font-size: 1.05rem; color: #4a5568;">
-          Interactive visualization of the cognitive graph where users can explore style clusters (minimalist, sleek, modern, classic) and their associated properties. Click on objects to see detailed attributes and relationships.
-        </p>
-      </div>
     </div>
   </section>
 
@@ -283,11 +332,6 @@
       <figure class="image" style="margin: 2rem 0;">
         <img src="./img/fig_3.png" alt="Property Editor Interface">
       </figure>
-      <div class="content">
-        <p style="font-size: 1.05rem; color: #4a5568;">
-          Edit individual segments by modifying their extracted properties. The system maintains semantic consistency across related parts while allowing precise control over materials, colors, and styles.
-        </p>
-      </div>
     </div>
   </section>
 
@@ -340,11 +384,6 @@
       <figure class="image" style="margin: 2rem 0;">
         <img src="./img/fig_hbi.png" alt="HBI-based Generation">
       </figure>
-      <div class="content">
-        <p style="font-size: 1.05rem; color: #4a5568;">
-          Extract Human-Behavior-Informed (HBI) attributes and use them to guide image generation - ensuring generated designs maintain functional and semantic coherence.
-        </p>
-      </div>
     </div>
   </section>
 
