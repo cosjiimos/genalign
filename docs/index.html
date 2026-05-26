@@ -27,15 +27,19 @@
     /* Additional styling for rich content */
     .overview-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      margin: 3rem 0;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+      max-width: 100%;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
+      .overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
       .overview-grid {
         grid-template-columns: 1fr;
       }
@@ -43,35 +47,36 @@
 
     .overview-card {
       background: white;
-      padding: 2rem;
-      border-radius: 16px;
+      padding: 1.5rem;
+      border-radius: 12px;
       border: 2px solid var(--accent-purple);
       transition: all 0.3s ease;
       position: relative;
     }
 
     .overview-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 32px rgba(167, 139, 250, 0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(167, 139, 250, 0.15);
       border-color: var(--primary-purple);
     }
 
     .overview-card-icon {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       color: var(--primary-purple);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .overview-card h3 {
       color: var(--dark-purple);
       font-weight: 700;
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
     }
 
     .overview-card p {
       color: #4a5568;
-      line-height: 1.7;
+      line-height: 1.6;
+      font-size: 0.9rem;
     }
 
     .pipeline-step {
@@ -216,65 +221,6 @@
   </section>
 
   <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 section-title has-text-centered">Key Features</h2>
-      <p class="has-text-centered" style="font-size: 1.1rem; color: #4a5568; margin-bottom: 2rem;">
-        Six core capabilities powering the GenAlign system
-      </p>
-
-      <div class="overview-grid">
-        <div class="overview-card">
-          <div class="overview-card-icon"><i class="fas fa-cut"></i></div>
-          <h3>Semantic Segmentation</h3>
-          <p>
-            Automatic part-level segmentation using Semantic-SAM with Swin-L Transformer backbone for precise boundary detection.
-          </p>
-        </div>
-
-        <div class="overview-card">
-          <div class="overview-card-icon"><i class="fas fa-brain"></i></div>
-          <h3>GPT-4o Vision</h3>
-          <p>
-            AI-powered segment labeling and attribute extraction (color, material, style, relationships) using multimodal GPT-4o.
-          </p>
-        </div>
-
-        <div class="overview-card">
-          <div class="overview-card-icon"><i class="fas fa-project-diagram"></i></div>
-          <h3>Knowledge Graph</h3>
-          <p>
-            Structured triple extraction with VisualSem ontology: 13 standard relations + 1 custom "is-style-of" relation.
-          </p>
-        </div>
-
-        <div class="overview-card">
-          <div class="overview-card-icon"><i class="fas fa-eraser"></i></div>
-          <h3>Background Removal</h3>
-          <p>
-            Intelligent background removal using rembg (ISNet model) for cleaner segmentation results.
-          </p>
-        </div>
-
-        <div class="overview-card">
-          <div class="overview-card-icon"><i class="fas fa-search"></i></div>
-          <h3>Semantic Search</h3>
-          <p>
-            CLIP-based image embedding with FAISS indexing for fast similarity search and retrieval.
-          </p>
-        </div>
-
-        <div class="overview-card">
-          <div class="overview-card-icon"><i class="fas fa-server"></i></div>
-          <h3>REST API</h3>
-          <p>
-            Production-ready Flask API with 6 endpoints for segmentation, labeling, triple extraction, and image generation.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt">
     <div class="container is-max-desktop">
       <h2 class="title is-3 section-title has-text-centered">Overview</h2>
       <p class="has-text-centered" style="font-size: 1.1rem; color: #4a5568; margin-bottom: 2rem;">
