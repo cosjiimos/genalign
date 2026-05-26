@@ -1,0 +1,87 @@
+.
+├── API.md
+├── config.example.py
+├── configs
+│   └── semantic_sam_only_sa-1b_swinL.yaml
+├── example_usage.py
+├── LICENSE
+├── PIPELINE.md
+├── project_structure.txt
+├── QUICKSTART.md
+├── README.md
+├── requirements.txt
+├── semantic_sam
+│   ├── architectures
+│   │   ├── build.py
+│   │   ├── __init__.py
+│   │   ├── interactive_mask_dino.py
+│   │   └── registry.py
+│   ├── backbone
+│   │   ├── backbone.py
+│   │   ├── build.py
+│   │   ├── focal_dw.py
+│   │   ├── focal.py
+│   │   ├── __init__.py
+│   │   ├── registry.py
+│   │   ├── swin_new.py
+│   │   └── swin.py
+│   ├── BaseModel.py
+│   ├── body
+│   │   ├── build.py
+│   │   ├── decoder
+│   │   ├── encoder
+│   │   ├── general_head.py
+│   │   ├── __init__.py
+│   │   ├── registry.py
+│   │   └── transformer_blocks.py
+│   ├── build_semantic_sam.py
+│   ├── __init__.py
+│   ├── language
+│   │   ├── build.py
+│   │   ├── encoder.py
+│   │   ├── __init__.py
+│   │   ├── LangEncoder
+│   │   ├── registry.py
+│   │   └── vlpencoder.py
+│   ├── modules
+│   │   ├── attention.py
+│   │   ├── criterion_interactive_many_to_many.py
+│   │   ├── criterion_interactive_many_to_one.py
+│   │   ├── __init__.py
+│   │   ├── many2many_matcher.py
+│   │   ├── matcher.py
+│   │   ├── point_features.py
+│   │   ├── position_encoding.py
+│   │   └── postprocessing.py
+│   └── utils
+│       ├── box_ops.py
+│       ├── config.py
+│       ├── __init__.py
+│       └── misc.py
+├── server.py
+├── server_utils.py
+├── setup.sh
+├── tasks
+│   ├── automatic_mask_generator.py
+│   ├── __init__.py
+│   ├── interactive_idino_m2m_auto.py
+│   ├── interactive_idino_m2m.py
+│   └── interactive_predictor.py
+└── utils
+    ├── arguments.py
+    ├── Config.py
+    ├── constants.py
+    ├── dist.py
+    ├── distributed.py
+    ├── __init__.py
+    ├── misc.py
+    ├── model.py
+    ├── prompt_engineering.py
+    ├── sam_utils
+    │   ├── amg.py
+    │   ├── __init__.py
+    │   ├── onnx.py
+    │   └── transforms.py
+    └── visualizer.py
+
+14 directories, 70 files

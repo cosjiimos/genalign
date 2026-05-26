@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs and Data
+logs/
+*.log
+*.csv
+*.json
+!configs/*.json
+!*.example.json
+
+# Model Checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# CLIP Index Files
+*.index
+*.pkl
+clip_image_index.index
+clip_image_paths.pkl
+
+# Generated Images
+client/public/img/sofa_generated/
+client/public/img/removed_bg/
+client/public/img/nobg/
+debug/
+
+# API Keys
+.env
+*.key
+api_key.txt
+
+# Temporary Files
+temp/
+tmp/
+*.tmp
+
+# Dataset
+datasets/
+data/
+*.zip
+*.tar
+*.tar.gz
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Coverage and Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Documentation Build
+docs/_build/
+site/
+
+# OS
+Thumbs.db
+
+# Internal Setup Guides (Korean)
+지금_바로_업로드.md
+GITHUB_업로드_가이드.md
+최종_업로드_가이드.md
+시작하기.md

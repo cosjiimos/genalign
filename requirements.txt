@@ -1,0 +1,59 @@
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.19.2
+timm==0.4.12
+
+# Computer Vision & Image Processing
+opencv-python>=4.8.0
+Pillow>=9.4.0
+scikit-image>=0.21.0
+rembg>=2.0.50
+
+# Segmentation Model (Semantic-SAM dependencies)
+fvcore>=0.1.5
+pycocotools>=2.0.6
+shapely>=2.0.0
+kornia==0.6.4
+torchmetrics==0.6.0
+
+# API & Web
+Flask>=2.3.0
+flask-cors>=4.0.0
+openai>=1.0.0
+
+# Vector Search
+faiss-cpu>=1.7.4  # Use faiss-gpu if GPU available
+# faiss-gpu>=1.7.4  # Uncomment for GPU version
+
+# NLP & Text Processing
+sentencepiece>=0.1.99
+ftfy>=6.1.1
+regex>=2023.6.3
+nltk>=3.8.1
+
+# Data Processing
+numpy>=1.23.5,<2.0.0
+pandas>=2.0.0
+pyarrow>=12.0.0
+
+# Configuration & Utilities
+pyyaml>=6.0
+json-tricks>=3.17.0
+yacs>=0.1.8
+einops>=0.6.1
+progressbar2>=4.2.0
+
+# SVG Processing
+svgpathtools>=1.5.1
+
+# Scientific Computing
+scikit-learn>=1.3.0
+
+# Optional: For GPU acceleration
+# nvidia-ml-py3>=7.352.0
+
+# Development & Testing (optional)
+# pytest>=7.4.0
+# black>=23.7.0
+# flake8>=6.1.0
