@@ -3,12 +3,12 @@ body {
   color: #2d3748;
 }
 
-/* Purple Theme Colors - Toned Down */
+/* Purple Theme Colors - Darker */
 :root {
-  --primary-purple: #a78bfa;
-  --light-purple: #c4b5fd;
-  --dark-purple: #8b5cf6;
-  --accent-purple: #ede9fe;
+  --primary-purple: #8b5cf6;
+  --light-purple: #a78bfa;
+  --dark-purple: #7c3aed;
+  --accent-purple: #ddd6fe;
   --bg-light: #f5f3ff;
 }
 
@@ -44,7 +44,7 @@ body {
 
 /* Section styling */
 .section-alt {
-  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, var(--bg-light));
 }
 
 .section-title {
@@ -131,7 +131,7 @@ figure img {
 
 /* Hero section */
 .hero {
-  background: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, var(--bg-light) 100%);
 }
 
 /* Footer */
